@@ -9,34 +9,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<!--BODY--> 
 <body>
 <!--HEADER-->
-    <header>
-        <div class="conteiner div-header">
-        <a href="" class="header-logo">Web<span class="header-second-logo">Studio</span></a>
-            <nav class="header-nav">
-                <ul class="header-list">
-                    <li class="header-item">
-                        <a href="" class="header-link link current">Студия</a></li>
-                    <li class="header-item">
-                        <a href="./portfolio.html" class="header-link link">Портфолио</a></li>
-                    <li class="header-item">
-                        <a href="" class="header-link link">Контакты</a></li>
+    <header class="header">
+        <div class="header__container container">
+            <a href="" class="logo">
+                Web<span class="logo__text">Studio</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link nav__link--current">Студия</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Контакты</a>
+                    </li>
                 </ul>
             </nav>
-                <ul class="header-second-list">
-                    <li class="header-second-item">
-                        <a href="mailto:info@devstudio.com" class="header-mail header-link">
-                            <svg class="header-svg" width="16" height="12">
-                            <use href="./images3/sprite.svg#icon-email"></use>
-                        </svg> info@devstudio.com</a></li>
-                    <li class="header-second-item">
-                        <a href="tel:+380961111111" class="header-tel header-link">
-                            <svg class="header-second-svg" width="10" height="16">
-                            <use href="./images3/sprite.svg#icon-phone"></use>
-                        </svg>+38 096 111 11 11</a></li>
+                <ul class="header-contacts">
+                    <li class="header-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="header-contacts__link">
+                            <svg class="header-contacts__icon" width="16" height="12">
+                                <use href="./images3/sprite.svg#icon-email"></use>
+                            </svg> info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="header-contacts__item">
+                        <a href="tel:+380961111111" class="header-contacts__link">
+                            <svg class="header-contacts__icon" width="10" height="16">
+                                <use href="./images3/sprite.svg#icon-phone"></use>
+                            </svg>+38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
         </div>
     </header>
@@ -45,9 +52,11 @@
 
 <!--MAIN-->
 <main>
-<!--Cекція 1. HERO-->
+
+
+<!--1. Section Hero-->
 <section class="hero-section overlay">
-    <div class="conteiner">
+    <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
     </div>
@@ -94,7 +103,7 @@
             <label class="check" for="agree"> 
                     <input class="check_input" type="checkbox" name="contract" value="agree" id="agree">
                     <span class="check_box"></span>
-                    Соглашаюсь с рассылкой и принимаю <a href="" class="form-link">Условия договора</a> 
+                    Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="form-link">Условия договора</a> 
             </label>
         </div>
             
@@ -112,9 +121,9 @@
 </section>
 
 
-<!--Секція 2. Переваги-->
+<!--2. Section Переваги-->
 <section class="benefits-section">
-    <div class="conteiner">
+    <div class="container">
         <ul class="benefits-list">
             <li class="benefits-item">
                 <div class="benefits-div">
@@ -156,9 +165,9 @@
     </div>
 </section>
 
-<!--Чим ми займаємся-->
+<!--3. Section Чим ми займаємся-->
 <section class="section">
-    <div class="conteiner">
+    <div class="container">
     <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-list">
             <li class="work-item">
@@ -191,9 +200,9 @@
 
 
 
-<!--Секція 3. Наша команда-->
+<!--3. Section Наша команда-->
 <section class="team-section section">
-    <div class="conteiner">
+    <div class="container">
         <h2 class="team-title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-item">
@@ -346,9 +355,9 @@
 </section>
 </main>
 
-<!--Секція 4. Постійні клієнти-->
+<!--4. Section Постійні клієнти-->
 <section class="clients-section section">
-    <div class="clients-div conteiner">
+    <div class="clients-div container">
         <h2 class="clients-title">Постоянные клиенты</h2>
         <ul class="clients-list">
             <li class="clients-item">
@@ -398,9 +407,9 @@
 </section>
 
 
-<!--FOOTER-->
+<!--Footer-->
 <footer class="footer">
-    <div class="conteiner footer-conteiner">
+    <div class="container footer-conteiner">
         <div>
         <a href="" class="footer-logo">Web<span class="footer-second-logo">Studio</span></a>
         <address class="footer-adress">
@@ -457,6 +466,7 @@
     </div>
 </footer>
 
+<!--Script JS-->
 <script src="./js/model.js"></script>
 </body>
 </html> 

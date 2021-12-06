@@ -4,41 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 5</title>
+    <title>Homework 7</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
-
-<!--BODY-->
 <body>
-<!--HEADER-->
+<!--Header-->
     <header class="header">
-        <div class="conteiner div-header">
-            <a href="" class="header-logo">Web<span class="header-second-logo">Studio</span></a>
-                <nav class="header-nav">
-                    <ul class="header-list">
-                        <li class="header-item">
-                            <a href="./index.html" class="header-link link">Студия</a></li>
-                        <li class="header-item">
-                            <a href="" class="header-link link current">Портфолио</a></li>
-                        <li class="header-item">
-                            <a href="" class="header-link link">Контакты</a></li>
-                    </ul>
-                </nav>
-                    <ul class="header-second-list">
-                    <li class="header-second-item">
-                        <a href="mailto:info@devstudio.com" class="header-mail header-link">
-                            <svg class="header-svg" width="16" height="12">
-                            <use href="./images3/sprite.svg#icon-email"></use>
-                        </svg> info@devstudio.com</a></li>
-                    <li class="header-second-item">
-                        <a href="tel:+380961111111" class="header-tel header-link">
-                            <svg class="header-second-svg" width="10" height="16">
-                            <use href="./images3/sprite.svg#icon-phone"></use>
-                        </svg>+38 096 111 11 11</a></li>
+        <div class="header__container container">
+            <a href="" class="logo">
+                Web<span class="logo__text">Studio</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Студия</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link nav__link--current">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Контакты</a>
+                    </li>
                 </ul>
+            </nav>
+            <ul class="header-contacts">
+                <li class="header-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="header-contacts__link">
+                        <svg class="header-contacts__icon" width="16" height="12">
+                            <use href="./images3/sprite.svg#icon-email"></use>
+                        </svg> info@devstudio.com
+                    </a>
+                </li>
+                <li class="header-contacts__item">
+                    <a href="tel:+380961111111" class="header-contacts__link">
+                        <svg class="header-contacts__icon" width="10" height="16">
+                            <use href="./images3/sprite.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -48,7 +54,7 @@
 <!--MAIN-->
 <main>
 <section class="main section">
-    <div class="conteiner">
+    <div class="container">
         <h1 class="h">Прихований заголовок</h1>
 
 
@@ -76,7 +82,7 @@
 
 
 <!--Список картинок-->
-<div class="conteiner">
+<div class="container">
     <ul class="main-second-list">
         <li class="main-second-item">
             <a class="main-second-link" href="">
@@ -231,7 +237,7 @@
 
 <!--FOOTER-->
 <footer class="footer">
-    <div class="conteiner footer-conteiner">
+    <div class="container footer-conteiner">
         <div>
             <a href="" class="footer-logo">Web<span class="footer-second-logo">Studio</span></a>
             <address class="footer-adress">

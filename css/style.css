@@ -44,8 +44,8 @@ a {
 
 }
 
-/*----------CONTEINER--------------------*/
-.conteiner {
+/* Container */
+.container {
     margin-right: auto;
     margin-left: auto;
     margin-top: 0px;
@@ -55,23 +55,20 @@ a {
     padding-right: 15px;
 }
 
-
-
-/*----------HEADER----------------------*/
-
-header {
+/* Header */
+.header {
     color: var(---text-color);
     background-color: var(--header-bg-color);
     border-bottom: 1px solid #ECECEC;
 }
 
-.div-header {
+.header__container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.header-logo {
+.logo {
     color: var(--accent-text-color);
 
     font-family: Raleway;
@@ -81,9 +78,11 @@ header {
     letter-spacing: 0.03em;
 
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
-.header-second-logo {
+.logo__text {
     color: var(--primary-text-color);
 
     font-family: Raleway;
@@ -93,37 +92,44 @@ header {
     letter-spacing: 0.03em;
 }
 
-.header-list {
+.nav__list {
     display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
 }
 
-.header-item {
+.nav__item {
     margin-right: 50px;
 }
 
-.current::after {
-    background-color: var(--accent-text-color);
-    border-radius: 2px;
+.header-nav__item:last-child {
+    margin-right: 0px;
+}
+
+.nav__link--current {
+    color: var(--accent-text-color);
+}
+
+.nav__link--current::after {
+    position: absolute;
+    left: 0px;
 
     width: 100%;
     height: 4px;
 
     content: "";
 
-    position: absolute;
-    left: 0px;
     bottom: 0px;
     bottom: -1px;
+
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
 }
 
-.header-item:last-child {
-    margin-right: 0px;
-}
+.nav__link {
+    position: relative;
 
-.header-link {
     color: var(--primary-text-color);
 
     font-weight: 500;
@@ -135,21 +141,15 @@ header {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    position: relative;
-
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover,
-.header-link:focus {
+.nav__link:hover,
+.nav__link:focus {
     color: var(--accent-text-color);
 }
 
-.link.current {
-    color: var(--accent-text-color);
-}
-
-.header-second-list {
+.header-contacts {
 display: flex;
 margin-top: 0px;
 margin-bottom: 0px;
@@ -157,21 +157,26 @@ margin-left: auto;
 padding-left: 0px;
 }
 
-.header-second-item {
+.header-contacts__item {
     margin-right: 50px;
 }
 
-.header-second-item:last-child {
+.header-contacts__item:last-child {
     margin-right: 0px;
 }
 
-.header-mail {
+.header-contacts__link {
+    position: relative;
+
     color: var(--second-text-color);
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     display: flex;
     align-items: center;
@@ -179,44 +184,19 @@ padding-left: 0px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-mail:hover,
-.header-mail:focus {
-    color: var(--accent-text-color);
-
-}
-
-.header-tel {
-    color: var(--second-text-color);
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    display: flex;
-    align-items: center;
-}
-
-.header-tel:hover,
-.header-tel:focus {
+.header-contacts__link:hover,
+.header-contacts__link:focus {
     color: var(--accent-text-color);
 }
 
-.header-svg {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.header-second-svg {
+.header-contacts__icon {
     fill: currentColor;
     margin-right: 10px;
 }
 
 
 
-/* MAIN */
-/*-------Секція 1. HERO----------------*/
-
+/* 1. Section Hero */
 .hero-section {
     background-color: var(--hero-bg-color);
 
@@ -228,8 +208,10 @@ padding-left: 0px;
 
 .overlay {
     height: 600px;
+
     margin-left: auto;
     margin-right: auto;
+
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -248,10 +230,12 @@ padding-left: 0px;
     font-size: 44px;
     line-height: 1.37;
     letter-spacing: 0.06em;
+
     text-transform: uppercase;
     text-align: center;
 
     width: 696px;
+
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -259,18 +243,23 @@ padding-left: 0px;
 .hero-button {
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
+
     cursor: pointer;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
 
     display: inline-block;
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0px;
     border-radius: 4px;
+
     margin-bottom: 0px;
     padding: 10px;
+
     min-width: 200px;
     
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -291,6 +280,7 @@ padding-left: 0px;
 
     width: 100%;
     height: 100%;
+
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -304,16 +294,18 @@ padding-left: 0px;
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
 
     width: 528px;
     height: 581px;
+
+    padding: 40px 40px;
+
     background-color: #FFFFFF;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
-    padding: 40px 40px;
 }
 
 .modal-button-close {
@@ -336,7 +328,6 @@ padding-left: 0px;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
-    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,6 +356,7 @@ padding-left: 0px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
+
     color: #212121;
 }
 
@@ -372,7 +364,8 @@ padding-left: 0px;
     margin: 0 auto;
     right: 0;
 
-    width: 100%;    
+    width: 100%;  
+    
     justify-content: center;
     align-items: center;
 }
@@ -394,6 +387,7 @@ padding-left: 0px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+
     color: var(--second-text-color);
 }
 
@@ -404,6 +398,7 @@ padding-left: 0px;
 
     width: 448px;
     height: 40px;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -453,12 +448,11 @@ background-color: #188CE8;
 
 .svg-form {
     position: absolute;
+    top: 11px;
+    left: 12px;
 
     width: 18px;
     height: 18px;
-
-    top: 11px;
-    left: 12px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -509,12 +503,12 @@ textarea {
     resize: none;
 }
 
-
 .check {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
     color: #757575;
     
     display: flex;
@@ -547,9 +541,12 @@ textarea {
     background-image: url('../images3/icon.svg');
 }
 
-/* Секція 2. Переваги */
+
+
+/* 2. Section Переваги */
 .benefits-section {
 background-color: var(--benefits-section-bg-color);
+
 padding-top: 94px;
 padding-bottom: 0px;
 }
@@ -570,6 +567,7 @@ padding-bottom: 0px;
 
 .benefits-div {
     background: #F5F4FA;
+
     border-radius: 4px;
 
     width: 270px;
@@ -591,9 +589,9 @@ padding-bottom: 0px;
     margin-right: 30px;
 }
 
-
 .benefits-title {
     color: var(--primary-text-color);
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.145;
@@ -601,6 +599,7 @@ padding-bottom: 0px;
     text-transform: uppercase;
 
     width: 270px;
+
     margin-bottom: 10px;
     margin-top: 0px;
 }
@@ -614,12 +613,13 @@ padding-bottom: 0px;
     letter-spacing: 0.03em;
     
     width: 270px;
+
     margin-top: 0px;
 }
 
 
 
-/* Чим ми займаємся */
+/* 3. Section Чим ми займаємся */
 .work-title {
     color: var(--primary-text-color);
 
@@ -637,17 +637,12 @@ padding-bottom: 0px;
 margin-top: 0px;
 margin-bottom: 0px;
 padding-left: 0px;
-display: flex;
-}
 
-.work-item {
+display: flex;
 }
 
 .work-conteiner-position {
     position: relative;
-}
-
-.work-link {
 }
 
 .work-img {
@@ -658,20 +653,17 @@ display: flex;
     margin-right: 30px;
 }
 
-/* div */
+/* Container */
 .work-conteiner-box {
     position: absolute;
-    bottom: 0;
 
+    bottom: 0;
     margin: 0 auto;
 
     width: 100%;
     height: 70px;
 
     background: rgba(47, 48, 58, 0.8);
-
-    
-    
 
     display: flex;
     justify-content: center;
@@ -695,7 +687,7 @@ display: flex;
 
 
 
-/* Секція 3. Наша команда */
+/* 3. Section Наша команда */
 .team-section {
     background-color: var(--team-section-bg-color);
 }
@@ -703,29 +695,29 @@ display: flex;
 .team-title {
     color: var(--primary-text-color);
 
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-margin-bottom: 50px;
-margin-top: 0px;
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 
-
 .team-list {
-margin-top: 0px;
-padding-left: 0px;
-margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 
-display: flex;
+    display: flex;
 }
 
 .team-item {
-background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:not(:last-child) {
@@ -733,8 +725,8 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-foto {
-margin-bottom: 0px;
-padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .team-name {
@@ -743,7 +735,6 @@ padding-bottom: 0px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-
     letter-spacing: 0.03em;
     
     padding-top: 0px;
@@ -753,29 +744,31 @@ padding-bottom: 0px;
 }
 
 .team-text {
-color: var(--second-text-color);
+    color: var(--second-text-color);
 
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
 
-letter-spacing: 0.03em;
-margin-top: 0px;
-margin-bottom: 16px;
-padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    padding-bottom: 0px;
 }
 
 .team-div {
-text-align: center;
-padding-top: 30px;
-padding-bottom: 30px;
+    text-align: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Соціальні мережі */
 .social-list {
+    padding: 0px;
     padding-left: 0px;
     margin: 0px;
-    padding: 0px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -784,8 +777,10 @@ padding-bottom: 30px;
 .social-item {
     margin: 0px;
     padding: 0px;
+
     width: 44px;
     height: 44px;
+
     background-color: #FFFFFF;
 }
 
@@ -800,17 +795,20 @@ padding-bottom: 30px;
 .social-link {
     padding: 0px;
     margin: 0px;
+
     width: 44px;
     height: 44px;
+
     border-radius: 50%;
-    display: inline-block;
-    fill: #AFB1B8;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill: #AFB1B8;
+    
+    transition: 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     background 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
@@ -823,6 +821,7 @@ padding-bottom: 30px;
 .social-svg {
     width: 20px;
     height: 20px;
+    
     margin: 0px;
     padding: 0px;
 }
@@ -830,7 +829,6 @@ padding-bottom: 30px;
 
 
 /* Портфоліо */
-
 main {
     background-color: var(--portfolio-main-bg-color);
 }
@@ -838,27 +836,29 @@ main {
 /* Скритий заголовок */
 .h {
     position: absolute;
+
     clip: rect(0 0 0 0);
+
     width: 1px;
     height: 1px;
+
     margin: -1px;
-    border: 0;
     padding: 0;
+
+    border: 0;
+    
     overflow: hidden;
 }
 
-/* ul кнопок */
 .main-list { 
     margin-top: 0px;
     margin-bottom: 50px;
     padding: 0px;
+
     display: flex;
     justify-content: center;
 }
 
-/* li кнопок */
-
-/* Кнопки */
 .main-button {
     color: var(--primary-text-color);
     background-color: #F5F4FA;
@@ -868,14 +868,13 @@ main {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-
-    text-align: center;
     letter-spacing: 0.03em;
 
+    text-align: center;
+    
     cursor: pointer;
 
     border: none;
-
     border-radius: 4px;
 
     padding: 6px 22px;
@@ -890,7 +889,6 @@ main {
     margin-right: 8px;
 }
 
-/* Ховер, фокус кнопок*/
 .main-button:hover,
 .main-button:focus {
     color: var(--white-text-color);
@@ -898,17 +896,17 @@ main {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* ul картинок */
 .main-second-list {
     margin: 0px;
     padding: 0px;
+
     display: flex;
     flex-wrap: wrap;
 }
 
-/* li (картинок, заголовків, абзаців */
 .main-second-item {
     width: 370px;
+
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -923,19 +921,20 @@ main {
     margin-bottom: 0px;
 }
 
-/* Картинки */
 .main-img {
     margin-bottom: 0px;
+
     display: block;
 }
 
-/* h2 */
 .main-title {
     color: var(--primary-text-color);
+
     margin-top: 0px;
     margin-bottom: 4px;
     padding-left: 0px;
     padding-right: 0px;
+
     width: 322px;
     
     font-family: Roboto;
@@ -944,17 +943,15 @@ main {
     font-size: 18px;
     line-height: 2; 
     letter-spacing: 0.06em;
-
 }
 
-/* span */
 .main-span {
     color: var(--primary-text-color);
 }
 
-/* p */
 .main-text {
     color: var(--second-text-color);
+
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
@@ -970,20 +967,19 @@ main {
 }
 
 .main-conteiner {
-padding-top: 20px;
-padding-bottom: 20px;
-padding-left: 24px;
-padding-right: 24px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px; 
 
-border-right: 1px solid #eeeeee;
-border-bottom: 1px solid #eeeeee;
-border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
 }
 
 
 
 /* Оверлей */
-
 .main-second-link {
     display: block;
 }
@@ -995,6 +991,7 @@ border-left: 1px solid #eeeeee;
 
 .main-relative {
     position: relative;
+
     overflow: hidden;
 }
 
@@ -1007,15 +1004,18 @@ border-left: 1px solid #eeeeee;
     position: absolute;
     top: 0;
     left: 0;
+
     background-color: rgba(33, 150, 243, 0.9);
 
     width: 100%;
     height: 100%;
 
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     padding: 63px 24px;
+
+    transform: translateY(100%);
+
+    transition: 
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -1026,16 +1026,13 @@ border-left: 1px solid #eeeeee;
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
+
     color: #FFFFFF;
 }
 
 
 
-
-
-
-/* Секція 4. Постійні клієнти */
-
+/* 4. Section Постійні клієнти */
 .clients-title {
     font-weight: 700;
     font-size: 36px;
@@ -1043,22 +1040,21 @@ border-left: 1px solid #eeeeee;
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     margin-bottom: 50px;
 }
 
 .clients-list {
     margin: 0px;
     padding: 0px;
+
     display: flex;
 }
 
 .clients-item {
     width: 170px;
     height: 92px;
-
-    
 }
 
 .clients-item:not(:last-child){
@@ -1068,11 +1064,11 @@ border-left: 1px solid #eeeeee;
 .clients-link {
     margin: 0px;
     padding: 0px;
+
     width: 170px;
     height: 92px;
 
     border: 1px solid #AFB1B8;
-    fill: #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
 
@@ -1080,7 +1076,10 @@ border-left: 1px solid #eeeeee;
     justify-content: center;
     align-items: center;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill: #AFB1B8;
+
+    transition: 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1092,9 +1091,7 @@ border-left: 1px solid #eeeeee;
 
 
 
-
-
-/* Футер */
+/* Footer */
 .footer {
     background-color: var(--footer-bg-color);
 
@@ -1104,26 +1101,28 @@ border-left: 1px solid #eeeeee;
 
 .footer-logo {
     color: var(--accent-text-color);
+
     font-family: 'Raleway', sans-serif;
 
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
     letter-spacing: 0.03em;
+
     display: inline-block;
+
     margin-bottom: 20px;
 }
 
 .footer-second-logo {
     color: var(--white-text-color);
+
     font-family: 'Raleway', sans-serif;
 
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-
     letter-spacing: 0.03em;
 }
 
@@ -1131,17 +1130,15 @@ border-left: 1px solid #eeeeee;
     margin-bottom: 20px;
 }
 
-
 .footer-list {
-margin-top: 0px;
-margin-bottom: 0px;
-padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
 
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
-
 
 .footer-link-map {
     color: var(--white-text-color);
@@ -1150,11 +1147,12 @@ padding-left: 0px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-
     letter-spacing: 0.03em;
+
     display: inline-block;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-map:hover,
@@ -1193,7 +1191,8 @@ padding-left: 0px;
 
     display: inline-block;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-tel:hover,
@@ -1203,17 +1202,15 @@ padding-left: 0px;
 
 
 
-
 /* Друга частина футеру */
-
 .footer-conteiner {
     display: flex;
     align-items: baseline;
 }
 
 .footer-second-title {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -1223,21 +1220,24 @@ padding-left: 0px;
     text-transform: uppercase;
 
     color: #FFFFFF;
-
 }
 
 .footer-second-list {
     margin: 0px;
     padding: 0px;
+
     display: flex;
 }
 
 .footer-second-item {
     width: 44px;
     height: 44px;
+
     margin-right: 0px;
     padding: 0px;
+
     border-radius: 50%; 
+
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -1248,6 +1248,7 @@ padding-left: 0px;
 .footer-svg {
     width: 20px;
     height: 20px;
+
     margin: 0px;
     padding: 0px;
 
@@ -1257,13 +1258,15 @@ padding-left: 0px;
 .footer-second-link {
     width: 44px;
     height: 44px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     border-radius: 50%;
 
-    transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: 
+    fill 1000ms cubic-bezier(0.4, 0, 0.2, 1),
     background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1272,11 +1275,11 @@ padding-left: 0px;
     background-color: var(--accent-text-color);
 }
 
-
-
 .second-div {
     margin-left: 70px;
 }
+
+
 
 /* Третя частина футера */
 
@@ -1297,6 +1300,7 @@ padding-left: 0px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
     color: var(--white-text-color);
 }
 
@@ -1309,18 +1313,20 @@ padding-left: 0px;
 
     color: #ffffff;
     background-color: #2f303a;
+
     outline: none;
     
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     border-radius: 4px;
 
-    transition: filter 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-input:hover,
 .subscribe-input:focus {
-    filter: drop-shadow(0px 4px 4px rgba(241, 4, 4, 0.952));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .subscribe-input::placeholder {
@@ -1331,6 +1337,7 @@ padding-left: 0px;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
+
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1346,6 +1353,7 @@ padding-left: 0px;
 
     color: var(--white-text-color);
     background: var(--accent-text-color);
+
     border-color: var(--accent-color);
     border-radius: 4px;
     border: 0px;
@@ -1371,5 +1379,6 @@ padding-left: 0px;
 
 .btn-send {
     display: flex;
+    
     margin-left: 10px;
 }
