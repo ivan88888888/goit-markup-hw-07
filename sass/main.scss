@@ -1,3 +1,4 @@
+// Studio
 @import './variables';
 @import './header';
 @import './hero';
@@ -6,3 +7,9 @@
 @import './section-our_team';
 @import './section-regular_customers';
 @import './footer';
+
+// Portfolio
+@import './components/section';
+@import './components/portfolio/hidden-title';
+@import './components/button';
+@import './components/cards';
