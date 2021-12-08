@@ -1,15 +1,15 @@
 // Studio
-@import './variables';
-@import './header';
-@import './hero';
-@import './section-benefits';
-@import './section-what_we_do';
-@import './section-our_team';
-@import './section-regular_customers';
-@import './footer';
+@import './utils/variables';
+@import './components/header';
+@import './components/hero';
+@import './components/section-benefits';
+@import './components/section-what_we_do';
+@import './components/section-our_team';
+@import './components/section-regular_customers';
+@import './components/footer';
 
 // Portfolio
 @import './components/section';
-@import './components/portfolio/hidden-title';
+@import './components/hidden-title';
 @import './components/button';
 @import './components/cards';
