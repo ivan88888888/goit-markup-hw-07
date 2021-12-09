@@ -57,7 +57,7 @@ a {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header__container {
+.header .header__container {
   margin-right: auto;
   margin-left: auto;
   margin-top: 0px;
@@ -82,7 +82,7 @@ a {
   padding-bottom: 25px;
 }
 
-.logo__text {
+.logo .logo__text {
   color: var(--primary-text-color);
   font-family: Raleway;
   font-weight: 700;
@@ -119,8 +119,7 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--accent-text-color);
 }
 
@@ -148,15 +147,11 @@ a {
   padding-left: 0px;
 }
 
-.header-contacts__item {
+.header-contacts .header-contacts__item {
   margin-right: 50px;
 }
 
-.header-contacts__item:last-child {
-  margin-right: 0px;
-}
-
-.header-contacts__link {
+.header-contacts .header-contacts__link {
   position: relative;
   color: var(--second-text-color);
   font-weight: 500;
@@ -170,14 +165,17 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts__link:hover,
-.header-contacts__link:focus {
+.header-contacts .header-contacts__link:hover, .header-contacts .header-contacts__link:focus {
   color: var(--accent-text-color);
 }
 
-.header-contacts__icon {
+.header-contacts .header-contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.header-contacts__item:last-child {
+  margin-right: 0px;
 }
 
 /* 1. Section Hero */
@@ -188,16 +186,7 @@ a {
   text-align: center;
 }
 
-.overlay {
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images3/img.jpg);
-}
-
-.hero__title {
+.hero .hero__title {
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -210,7 +199,7 @@ a {
   margin-bottom: 30px;
 }
 
-.hero__button {
+.hero .hero__button {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
   cursor: pointer;
@@ -228,10 +217,18 @@ a {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__button:hover,
-.hero__button:focus {
+.hero .hero__button:hover, .hero .hero__button:focus {
   color: var(--white-text-color);
   background-color: #188CE8;
+}
+
+.overlay {
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images3/img.jpg);
 }
 
 .backdrop {
@@ -420,8 +417,7 @@ a {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit-button:hover,
-.submit-button:focus {
+.submit-button:hover, .submit-button:focus {
   background-color: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -448,8 +444,7 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-close:hover,
-.modal-button-close:focus {
+.modal-button-close:hover, .modal-button-close:focus {
   fill: var(--accent-text-color);
 }
 
@@ -460,7 +455,7 @@ a {
   padding-bottom: 0px;
 }
 
-.benefits__list {
+.benefits .benefits__list {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 0px;
@@ -469,7 +464,7 @@ a {
   flex-wrap: wrap;
 }
 
-.benefits__item {
+.benefits .benefits__item {
   width: 270px;
 }
 
@@ -665,8 +660,7 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__social-link:hover,
-.team__social-link:focus {
+.team__social-link:hover, .team__social-link:focus {
   fill: var(--white-text-color);
   background-color: var(--accent-text-color);
 }
@@ -713,8 +707,7 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
@@ -773,8 +766,7 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__link-map:hover,
-.footer__link-map:focus {
+.footer__link-map:hover, .footer__link-map:focus {
   color: var(--accent-text-color);
 }
 
@@ -790,8 +782,7 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__link-mail:hover,
-.footer__link-mail:focus {
+.footer__link-mail:hover, .footer__link-mail:focus {
   color: var(--accent-text-color);
 }
 
@@ -806,8 +797,7 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__link-tel:hover,
-.footer__link-tel:focus {
+.footer__link-tel:hover, .footer__link-tel:focus {
   color: var(--accent-text-color);
 }
 
@@ -816,7 +806,7 @@ a {
   margin-left: 70px;
 }
 
-.join-title {
+.join .join-title {
   padding: 0px;
   margin: 0px;
   margin-bottom: 20px;
@@ -857,8 +847,7 @@ a {
   transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-social__link:hover,
-.join-social__link:focus {
+.join-social__link:hover, .join-social__link:focus {
   background-color: var(--accent-text-color);
 }
 
@@ -875,7 +864,7 @@ a {
   margin-left: 93px;
 }
 
-.subscribe-title {
+.subscribe .subscribe-title {
   margin: 0px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -904,8 +893,7 @@ a {
   transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-form__input:hover,
-.subscribe-form__input:focus {
+.subscribe-form__input:hover, .subscribe-form__input:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -939,8 +927,7 @@ a {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-form__button:hover,
-.subscribe-form__button:focus {
+.subscribe-form__button:hover, .subscribe-form__button:focus {
   background-color: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -999,8 +986,7 @@ main {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__button:hover,
-.main__button:focus {
+.main__button:hover, .main__button:focus {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1034,8 +1020,7 @@ main {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cards__link:hover,
-.cards__link:focus {
+.cards__link:hover, .cards__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
