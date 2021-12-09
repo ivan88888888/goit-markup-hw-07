@@ -70,7 +70,7 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
     ),
-    url(../images3/img.jpg);
+    url(../images/img.jpg);
 }
 
 .backdrop {
@@ -256,7 +256,7 @@
     width: 16px;
     height: 15px;
 
-    background-image: url('../images3/2(1).svg');
+    background-image: url('../images/2(1).svg');
 
     margin-right: 8.38px;
 
@@ -268,7 +268,7 @@
 }
 
 .checkbox__input:checked + .checkbox__box {
-    background-image: url('../images3/icon.svg');
+    background-image: url('../images/icon.svg');
 }
 
 .checkbox__link {

@@ -228,7 +228,7 @@ a {
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images3/img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
 }
 
 .backdrop {
@@ -384,7 +384,7 @@ a {
 .checkbox__box {
   width: 16px;
   height: 15px;
-  background-image: url("../images3/2(1).svg");
+  background-image: url("../images/2(1).svg");
   margin-right: 8.38px;
   cursor: pointer;
   display: flex;
@@ -393,7 +393,7 @@ a {
 }
 
 .checkbox__input:checked + .checkbox__box {
-  background-image: url("../images3/icon.svg");
+  background-image: url("../images/icon.svg");
 }
 
 .checkbox__link {
@@ -937,7 +937,7 @@ a {
   margin-left: 10px;
 }
 
-/* Section */
+/* Section main portfolio */
 main {
   background-color: var(--portfolio-main-bg-color);
   padding-top: 94px;
