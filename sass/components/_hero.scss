@@ -23,8 +23,9 @@
     margin: 0 auto;
     margin-bottom: 30px;
     }
+}
 
-    .hero__button {
+.hero__button {
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
 
@@ -52,7 +53,6 @@
     &:focus {
     color: var(--white-text-color);
     background-color: #188CE8;
-    }
     }
 }
 
@@ -90,7 +90,6 @@
     opacity: 0;
     pointer-events: none;
 }
-
 
 .modal {
     position: relative;

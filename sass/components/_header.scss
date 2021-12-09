@@ -110,8 +110,9 @@
     .header-contacts__item {
     margin-right: 50px;
     }
+}
 
-    .header-contacts__link {
+.header-contacts__link {
     position: relative;
 
     color: var(--second-text-color);
@@ -135,11 +136,10 @@
     }
 }
 
-    .header-contacts__icon {
+.header-contacts__icon {
     fill: currentColor;
     margin-right: 10px;
     }
-}
 
 .header-contacts__item:last-child {
     margin-right: 0px;
